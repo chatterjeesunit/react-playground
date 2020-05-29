@@ -1,0 +1,24 @@
+.table-style {
+    border: 1px gray solid;
+    margin: auto;
+    padding: auto;
+}
+
+.row {
+    align-content: center;
+}
+
+.row-red {
+    align-content: center;
+    background-color: lightcoral;
+}
+
+.row-green {
+    align-content: center;
+    background-color: lightgreen;
+}
+
+.cell {
+    align-content: center;
+    border: 1px gray solid;
+}
