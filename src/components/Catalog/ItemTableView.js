@@ -5,13 +5,13 @@ import './ItemTableView.css'
 
 const ItemCardView = () => {
     var productsList = CatalogList.map(element => {
-        let rowStyle = "row-green";
-        if(!element.inStock) {
-            rowStyle = "row-red";
-        }
+        // let rowStyle = "row-green";
+        // if(!element.inStock) {
+        //     rowStyle = "row-red";
+        // }
 
         return (
-            <tr className={rowStyle}>
+            <tr className="row">
                 <td className="cell">{element.name}</td>
                 <td className="cell">{element.discountedPrice}</td>
                 <td className="cell">{element.originalPrice}</td>
@@ -24,13 +24,13 @@ const ItemCardView = () => {
     return (
     <div>
         <h1>Catalog</h1>
-        <table className="table-style">
-            <tr className="row">
-                <th className="cell">Name</th>
-                <th className="cell">Price</th>
-                <th className="cell">Orignal Price</th>
-                <th className="cell">Category</th>
-                <th className="cell">Available</th>
+        <table className="table">
+            <tr>
+                <th className="header">Name</th>
+                <th className="header">Price</th>
+                <th className="header">Orignal Price</th>
+                <th className="header">Category</th>
+                <th className="header">Available</th>
             </tr>
             {productsList}
         </table>
