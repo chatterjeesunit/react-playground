@@ -1,6 +1,6 @@
-const CatalogList = 
 [
     {
+      "id" : 1,
       "name": "Apple iPhone 10",
       "originalPrice": 90000,
       "discountedPrice": 85000,
@@ -8,6 +8,7 @@ const CatalogList =
       "inStock": false
     },
     {
+      "id" : 2,
       "name": "Huwaei Nova 3i",
       "originalPrice": 20000,
       "discountedPrice": 19900,
@@ -15,6 +16,7 @@ const CatalogList =
       "inStock": false
     },
     {
+      "id" : 3,
       "name": "Samsung Note 8",
       "originalPrice": 50000,
       "discountedPrice": 45500,
@@ -22,6 +24,7 @@ const CatalogList =
       "inStock": true
     },
     {
+      "id" : 4,
       "name": "Macbook Pro",
       "originalPrice": 225000,
       "discountedPrice": 205000,
@@ -29,6 +32,7 @@ const CatalogList =
       "inStock": true
     },
     {
+      "id" : 5,
       "name": "Kindle Oasis",
       "originalPrice": 30000,
       "discountedPrice": 28900,
@@ -36,6 +40,7 @@ const CatalogList =
       "inStock": true
     },
     {
+      "id" : 6,
       "name": "Go Pro",
       "originalPrice": 25000,
       "discountedPrice": 24999,
@@ -43,6 +48,7 @@ const CatalogList =
       "inStock": false
     },
     {
+      "id" : 7,
       "name": "Sony Alpha 2 DSLR Camera",
       "originalPrice": 45000,
       "discountedPrice": 39990,
@@ -50,6 +56,7 @@ const CatalogList =
       "inStock": true
     },
     {
+      "id" : 8,
       "name": "Amazon Echo Dot",
       "originalPrice": 10000,
       "discountedPrice": 9900,
@@ -57,12 +64,11 @@ const CatalogList =
       "inStock": true
     },
     {
+      "id" : 9,
       "name": "Canon EOS 1300D",
       "originalPrice": 27000,
       "discountedPrice": 25500,
       "category": "Camera",
       "inStock": false
     }
-  ];
-
-export default CatalogList;
+  ]

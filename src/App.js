@@ -1,20 +1,22 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import ItemTableView from './components/Catalog/ItemTableView'
+import AppRouter from './Router/Router'
 
 function App() {
   return (
     <div>
       <header className="App-header">
         <table>
-          <tr>
-            <td><img src={logo} className="App-logo" alt="logo" /></td>
-            <td>ReactJS Playground</td>
-          </tr>
+          <tbody>
+            <tr>
+              <td><img src={logo} className="App-logo" alt="logo" /></td>
+              <td>ReactJS Playground</td>
+            </tr>
+          </tbody>
         </table>
       </header>
-      <ItemTableView />
+      <AppRouter />
     </div>
   );
 }

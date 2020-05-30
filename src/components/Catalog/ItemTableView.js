@@ -1,17 +1,14 @@
 import React from 'react'
-import CatalogList from './Catalog'
+import cataloglist from './Catalog.json'
 import './ItemTableView.css'
 
 
-const ItemCardView = () => {
-    var productsList = CatalogList.map(element => {
-        // let rowStyle = "row-green";
-        // if(!element.inStock) {
-        //     rowStyle = "row-red";
-        // }
+const ItemTableView = () => {
+    var productsList = cataloglist.map(element => {
+        
 
         return (
-            <tr className="row">
+            <tr className="row" key={element.id.toString()}>
                 <td className="cell">{element.name}</td>
                 <td className="cell">{element.discountedPrice}</td>
                 <td className="cell">{element.originalPrice}</td>
@@ -25,14 +22,16 @@ const ItemCardView = () => {
     <div>
         <h1>Catalog</h1>
         <table className="table">
-            <tr>
-                <th className="header">Name</th>
-                <th className="header">Price</th>
-                <th className="header">Orignal Price</th>
-                <th className="header">Category</th>
-                <th className="header">Available</th>
-            </tr>
-            {productsList}
+            <tbody>
+                <tr>
+                    <th className="header">Name</th>
+                    <th className="header">Price</th>
+                    <th className="header">Orignal Price</th>
+                    <th className="header">Category</th>
+                    <th className="header">Available</th>
+                </tr>
+                {productsList}
+            </tbody>
         </table>
     
     </div>
@@ -41,4 +40,4 @@ const ItemCardView = () => {
 
 
 
-export default ItemCardView
+export default ItemTableView
